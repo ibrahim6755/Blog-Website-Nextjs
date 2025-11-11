@@ -15,14 +15,17 @@ const Navbar = () => {
     <nav className="bg-transparent flex items-center justify-between relative pt-4 p-4">
       {/* LOGO */}
       <div>
-        <Link href="/">
+        <Link href="/" className="flex items-center gap-2">
           <Image
-            src={"/assets/logo.png"}
-            width={138}
-            height={138}
+            src={"/assets/blog-logo.png"}
+            width={42}
+            height={42}
             alt="logo"
-            className="invert"
+            className="invert rounded-3xl flex items-center"
           />
+          <span className="font-extrabold">
+            Inno<span className="text-light-green">Blog</span>{" "}
+          </span>
         </Link>
       </div>
 
